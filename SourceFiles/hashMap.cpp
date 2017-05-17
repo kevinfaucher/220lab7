@@ -15,7 +15,7 @@ hashMap::hashMap() {
 
 //AddKeyValue
 
-hashMap::addKeyValue(string k, string v) {
+void hashMap::addKeyValue(string k, string v) {
     //there's nothing there (it's NULL), add the hashNode with the keyword and value
     if (map[v] == NULL) {
 
@@ -29,7 +29,7 @@ hashMap::addKeyValue(string k, string v) {
     bool same = false;
     for (int i = 0; i <= mapSize; i++) {
         if (map[i]->keyword == v) {
-            map[i].addValue(k);
+            map[i]->addValue(k);
             same = true;
         }
 
@@ -39,9 +39,9 @@ hashMap::addKeyValue(string k, string v) {
         int newIndex = -1;
         while (map[v] != NULL || map->keyword == v) {
             tempIndex = calcHash(k); //This looks at a new index
-            if (map[calcHash(k)].keyword == v) {
+            if (map[calcHash(k)]->keyword == v) {
                 newIndex = tempIndex;
-                map[newIndex].addValue(k); //adding value to node
+                map[newIndex]->addValue(k); //adding value to node
                 numKeys++;
             }
 
@@ -63,30 +63,30 @@ hashMap::addKeyValue(string k, string v) {
 
 }
 
-hashMap::getIndex(string k) {
+int hashMap::getIndex(string k) {
 
 }
 
-hashMap::calcHash(string k) {
-    return k % mapSize;
+int hashMap::calcHash(string k) {
+    //return k % mapSize;
 }
 
-hashMap::getClosestPrime() {
-
-}
-
-hashMap::reHash() {
+void hashMap::getClosestPrime() {
 
 }
 
-hashMap::dblHash(int h, int i, string k) {
+void hashMap::reHash() {
 
 }
 
-hashMap::findKey(string k) {
+int hashMap::dblHash(int h, int i, string k) {
 
 }
 
-hashMap::printMap() {
+int hashMap::findKey(string k) {
+
+}
+
+void hashMap::printMap() {
 
 }

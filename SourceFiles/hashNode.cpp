@@ -36,7 +36,7 @@ hashNode::hashNode(string s, string v) {
     currSize = 1;
 }
 
-hashNode::addValue(string v) {
+void hashNode::addValue(string v) {
     // adds a new value to the end of the values array,
     (values + 1) = v;
 
@@ -54,7 +54,7 @@ hashNode::addValue(string v) {
 //    string getRandValue(); // returns a random string from the values array. If
 //    there’s no values in the value array, then it returns an empty string.
 
-hashNode::dblArray() {
+void hashNode::dblArray() {
     int *dblArray = new int[valuesSize * 2]; //new array
 
     //Copying over the values
@@ -69,7 +69,7 @@ hashNode::dblArray() {
 // returns a random string from the values array. If
 // there’s no values in the value array, then it returns an empty string.
 
-hashNode::getRandValue() {
+string hashNode::getRandValue() {
 
     //Special Case if currSize == 0;
     if (currSize == 0) {
