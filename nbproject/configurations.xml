@@ -4,9 +4,9 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>hashMap.hpp</itemPath>
-      <itemPath>hashNode.hpp</itemPath>
-      <itemPath>makeSeuss.hpp</itemPath>
+      <itemPath>Headers/hashMap.hpp</itemPath>
+      <itemPath>Headers/hashNode.hpp</itemPath>
+      <itemPath>Headers/makeSeuss.hpp</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -37,19 +37,19 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="Headers/hashMap.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Headers/hashNode.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Headers/makeSeuss.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="SourceFiles/hashMap.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="SourceFiles/hashNode.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="hashMap.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="hashNode.hpp" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="makeSeuss.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="makeSeuss.hpp" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -72,19 +72,19 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Headers/hashMap.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Headers/hashNode.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Headers/makeSeuss.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="SourceFiles/hashMap.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="SourceFiles/hashNode.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="hashMap.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="hashNode.hpp" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="makeSeuss.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="makeSeuss.hpp" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>
