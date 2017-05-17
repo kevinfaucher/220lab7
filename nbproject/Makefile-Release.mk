@@ -35,6 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/SourceFiles/hashMap.o \
+	${OBJECTDIR}/SourceFiles/hashNode.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/makeSeuss.o
 
@@ -62,6 +64,16 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lab7.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lab7 ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/SourceFiles/hashMap.o: SourceFiles/hashMap.cpp
+	${MKDIR} -p ${OBJECTDIR}/SourceFiles
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/SourceFiles/hashMap.o SourceFiles/hashMap.cpp
+
+${OBJECTDIR}/SourceFiles/hashNode.o: SourceFiles/hashNode.cpp
+	${MKDIR} -p ${OBJECTDIR}/SourceFiles
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/SourceFiles/hashNode.o SourceFiles/hashNode.cpp
 
 ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}

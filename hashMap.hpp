@@ -38,3 +38,4 @@ public:
     //If it's not in the array, returns -1
     void printMap(); //I wrote this solely to check if everything was working.
 };
+#endif /* HASHMAP_HPP_ */
